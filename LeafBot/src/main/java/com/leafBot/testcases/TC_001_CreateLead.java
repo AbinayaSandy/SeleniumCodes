@@ -9,6 +9,7 @@ import com.leafBot.testng.api.base.ProjectSpecificMethods;
 
 
 public class TC_001_CreateLead extends ProjectSpecificMethods {
+	//LeafTap Lead Creation
 	
 	@BeforeTest
 	public void setData()
@@ -24,7 +25,7 @@ public class TC_001_CreateLead extends ProjectSpecificMethods {
 		public void runLogin(String UserName,String Password,String CName,String FName,String LName)
 		{
 			new LoginPage().enterUserName(UserName).enterPassword(Password).clickLogin().clickCRMSFA().clickLeads().clickCreateLead()
-			.enterCompanyName(CName).enterFirstName(FName).enterLastName(LName).submitCreateLead().verifyFirstName();;
+			.enterCompanyName(CName).enterFirstName(FName).enterLastName(LName).submitCreateLead().verifyFirstName();
 		}
 		
 	
